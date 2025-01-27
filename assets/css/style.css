@@ -71,7 +71,7 @@
 a {
     text-decoration: none;
     color: inherit;
-    width: fit-content;
+
 }
 
 body {
@@ -91,7 +91,7 @@ section {
     border-radius: 1.5rem;
     flex-grow: 1;
     text-align: center;
-    margin: 0 1rem;
+    margin: 0 1%;
     padding: 1rem 0;
 
 
@@ -153,7 +153,6 @@ section {
 /*#region header*/
 
 header {
-    font-family: 'Nerko One', cursive;
     margin-bottom: 5rem;
     padding: 1rem;
     background-color: var(--secondary-color);
@@ -274,7 +273,8 @@ footer {
 
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 4%;
+        flex-wrap: wrap;
 
         div {
             justify-content: space-around;
@@ -286,6 +286,10 @@ footer {
 
             &:last-child {
                 flex-grow: 1;
+
+                a {
+                    width: 100%;
+                }
             }
         }
 
@@ -297,8 +301,17 @@ footer {
 /*#region mediaqueries*/
 
 @media screen and (max-width:991px) {
-    main {
 
+    header {
+        & h1 {
+            text-align: center;
+        }
+    }
+
+    main {
+        section {
+            width: 95%;
+        }
 
         #top-content {
             div.container {
@@ -311,8 +324,35 @@ footer {
         }
 
         #socials {
-            div a b {
-                display: none;
+            div {
+                a {
+
+                    b {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #banner {
+        display: none;
+    }
+
+    footer {
+        section {
+            div {
+                text-align: center;
+                padding-bottom: 0.5rem;
+
+                &:last-child {
+                    flex-wrap: wrap;
+
+                    a {
+                        flex-basis: 25%;
+                        padding: 0.5rem;
+                    }
+                }
             }
         }
     }
@@ -322,7 +362,30 @@ footer {
 @media screen and (min-width:576px) and (max-width:991px) {}
 
 
-@media screen and (min-width:768px) and (max-width:991px) {}
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    div.embed-text div:last-child {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+
+        span {
+            margin-right: 2rem;
+        }
+    }
+
+    main section#banner {
+        display: block;
+    }
+
+    /*change footer elements alignment*/
+    footer section div:last-child a {
+        flex-basis: 20%;
+    }
+}
+
+
 
 @media screen and (min-width:992px) {}
 
