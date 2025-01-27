@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>htmlcss-responsive-layout</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile-first-style.css">
 </head>
 
 <body class=""> <!-- For .debug class -->
@@ -21,19 +21,21 @@
                 <H1>Tiramisù <span>(Dolce Tradizionale)</span></H1>
             </div>
 
-            <div class="container d-flex">
-                <div class="embed-wrapper col-8">
+            <div class="container"> <!-- missing d-flex class for desktop first css -->
+                <div class="embed-wrapper"> <!-- missing col-8 class for desktop first css -->
                     <iframe src="https://www.youtube.com/embed/JVT900H6s0g?si=iCPYAFFtGLPp99Vf"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="embed-text col-4">
+
+                <!-- missing col-4 class for desktop first css -->
+                <div class="embed-text">
                     <div>
                         <h3><b>In breve</b></h3>
                     </div>
 
-                    <div class="d-flex">
+                    <div> <!-- missing d-flex class for desktop first css -->
                         <span>Difficoltà:<b> Facile</b></span>
                         <span>Tempo:<b> 40min</b></span>
                         <span>Porzione per:<b> 8 persone</b></span>
