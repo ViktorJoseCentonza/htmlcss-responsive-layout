@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="debug"> <!-- For .debug class -->
+<body class=""> <!-- For .debug class -->
 
     <header>
         <h1>Giallo Booleano</h1>
@@ -21,13 +21,14 @@
                 <H1>Tiramisù (Dolce Tradizionale)</H1>
             </div>
 
-            <container class="d-flex">
-                <div class="embed-wrapper"><iframe width="50%" height="100%"
-                        src="https://www.youtube.com/embed/JVT900H6s0g?si=iCPYAFFtGLPp99Vf" title="YouTube video player"
-                        frameborder="0"
+            <div class="container d-flex">
+                <div class="embed-wrapper col-8">
+                    <iframe src="https://www.youtube.com/embed/JVT900H6s0g?si=iCPYAFFtGLPp99Vf"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                <div class="embed-text">
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-text col-4">
                     <div>
                         <h3><b>In breve</b></h3>
                     </div>
@@ -41,11 +42,11 @@
                     </div>
                 </div>
 
-            </container>
+            </div>
         </section>
 
         <section id="socials">
-            <div class="social-buttons d-flex">
+            <div class="social-buttons d-flex col-12">
                 <a class="bttn" href="Facebook.com"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
                         height="15" viewBox="0 0 48 48">
                         <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
@@ -104,8 +105,9 @@
 
         <section id="presentation">
             <h2>PRESENTATION</h2>
-            <hr><!-- needs to be styled --></hr>
-            <container>
+            <hr>
+            </hr><!-- needs to be styled -->
+            <div>
                 <img src="assets/img/tiramisu.jpg" alt="Tiramisù slice">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi vitae suscipit repellat odit,
                     obcaecati aspernatur cupiditate exercitationem eius assumenda ipsum possimus minima officiis
@@ -120,7 +122,7 @@
                     praesentium reiciendis cumque, accusamus maxime officiis laudantium molestiae dolore. Sunt, ea
                     excepturi. Voluptatibus fugit dolore, eligendi totam blanditiis commodi beatae deserunt alias quidem
                     at!</p>
-            </container>
+            </div>
         </section>
     </main>
 
