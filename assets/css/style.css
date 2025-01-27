@@ -53,6 +53,11 @@ section {
 /* #region debug */
 
 .debug {
+
+    * {
+        border: 2px dotted green;
+    }
+
     header {
         background-color: red;
 
@@ -73,8 +78,16 @@ section {
     footer {
         background-color: orange;
 
-        * {
-            background-color: lightcoral;
+        section {
+            background-color: orange;
+
+            div {
+                background-color: red;
+
+                a {
+                    background-color: black;
+                }
+            }
         }
     }
 }
@@ -117,17 +130,53 @@ main {
         }
 
         container {
+            background-color: var(--secondary-color);
+            border-radius: 0.3rem;
+
             div {
                 flex-direction: column;
+                padding: 1rem;
+
+                span {
+                    padding: 0.3rem;
+                }
 
             }
         }
     }
 }
 
+
+
 /*#endregion main*/
 
 /*#region footer*/
+
+footer {
+    section {
+        color: var(--secondary-color);
+        background-color: var(--main-color);
+
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        div {
+            justify-content: space-around;
+            flex-grow: 6;
+
+            a {
+                text-decoration: underline;
+            }
+
+            &:last-child {
+                flex-grow: 1;
+            }
+        }
+
+    }
+}
+
 /*#endregion footer*/
 
 /*#region mediaqueries*/
