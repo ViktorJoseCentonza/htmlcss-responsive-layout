@@ -426,6 +426,9 @@ footer {
             &:first-child {
                 /*col-8*/
                 width: calc(100% / 12 *8);
+
+                /*TODO make better fix for iframe size*/
+                padding: 19% 0 !important;
             }
 
             &:last-child {
