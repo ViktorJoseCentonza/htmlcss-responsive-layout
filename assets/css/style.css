@@ -135,7 +135,25 @@ main {
 
             div {
                 flex-direction: column;
-                padding: 1rem;
+                flex-grow: 6;
+
+
+                /*TODO make embed responsive*/
+
+                &.embed-wrapper {
+
+
+                    & iframe {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                &.embed-text {
+                    padding: 1rem;
+                    padding-bottom: 10rem;
+                    flex-grow: 1;
+                }
 
                 span {
                     padding: 0.3rem;
