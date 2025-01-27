@@ -1,6 +1,9 @@
 /* #region common */
 :root {
-    --main-color: #ffffff;
+    --secondary-color: #ffffff;
+    --main-color: #7c69a4;
+    --background-color: #F6F5F3;
+    --text-secondary-color: #4e3969;
 
 }
 
@@ -13,14 +16,45 @@
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+section {
+    padding-bottom: 2rem;
+}
+
 .d-flex {
     display: flex;
 }
 
+.bttn {
+    background-color: var(--secondary-color);
+    border-radius: 1.5rem;
+    padding: 0.5rem 3rem;
+
+
+}
+
+.social-buttons {
+    padding: 2rem 0;
+    justify-content: space-between;
+
+}
+
+
+
+/* #region debug */
+
 .debug {
     header {
         background-color: red;
-        padding: 10rem;
 
         * {
             background-color: green;
@@ -29,7 +63,6 @@
 
     main {
         background-color: blue;
-        padding: 10rem;
 
         * {
             background-color: yellow;
@@ -39,7 +72,6 @@
 
     footer {
         background-color: orange;
-        padding: 10rem;
 
         * {
             background-color: lightcoral;
@@ -47,11 +79,14 @@
     }
 }
 
+/* #endregion debug */
+
 /*#endregion common*/
 
 /*#region header*/
 
 header {
+    background-color: var(--secondary-color);
 
     & h1 {
         font-family: 'Nerko One', cursive;
@@ -61,3 +96,49 @@ header {
 }
 
 /*#endregion header*/
+
+/*#region main*/
+
+main {
+    section {
+        width: 65%;
+        margin: auto;
+
+        div {
+            h4 {
+                color: grey;
+                font-size: small;
+            }
+
+            h1 {
+                color: var(--text-secondary-color);
+                font-size: 2rem;
+            }
+        }
+
+        container {
+            div {
+                flex-direction: column;
+
+            }
+        }
+    }
+}
+
+/*#endregion main*/
+
+/*#region footer*/
+/*#endregion footer*/
+
+/*#region mediaqueries*/
+/*@media screen and (min-width:576px) and (max-width:767px) {} for bonus*/
+
+
+@media screen and (min-width:768px) and (max-width:991px) {}
+
+@media screen and (min-width:992px) {}
+
+
+
+
+/*#endregion mediaqueries*/
